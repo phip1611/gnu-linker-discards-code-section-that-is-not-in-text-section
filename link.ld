@@ -21,6 +21,7 @@ SECTIONS {
         *(.lol);
     } : init_asm
 
+    /* High level code (C or Rust) will be linked here. */
     .text 0xffffffff88000000 : ALIGN(4K)
     {
         *(.text .text.*)
