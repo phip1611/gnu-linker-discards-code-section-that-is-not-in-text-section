@@ -3,7 +3,7 @@
 
 .EXTERN entry_highlevel_lang
 
-.section .boot
+.section .init
 
     # Entry referenced by the ELF file
     entry_asm:

@@ -18,7 +18,7 @@ SECTIONS {
 
     .init_asm 8M :
     {
-        KEEP(*(.boot));
+        KEEP(*(.init));
     } : init_asm
 
     .text 0xffffffff88000000 : ALIGN(4K)
