@@ -3,7 +3,9 @@
 
 .EXTERN entry_highlevel_lang
 
-.section .text.boot
+// "ax": section flags:
+// https://ftp.gnu.org/old-gnu/Manuals/gas-2.9.1/html_chapter/as_7.html
+.section .lol, "ax"
 
     # Entry referenced by the ELF file
     entry_asm:
