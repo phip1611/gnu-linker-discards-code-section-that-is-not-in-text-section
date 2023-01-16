@@ -1,6 +1,14 @@
 # Minimal Reproducible Example: GNU Linker (ld) Discards Code That Is Not In Text Section
 
-This repository shows a minimal reproducible example of a strang behaviour of the GNU linker (ld)
+**UPDATE**
+This is not a bug but expected behavior. After some research, I created the following 
+blogposts:
+- <https://phip1611.de/blog/linking-bss-into-data-to-ensure-the-mem-size-equals-file-size-for-each-load-segment-bss-in-a-progbits-section/>
+- <https://phip1611.de/blog/how-does-the-file-size-is-smaller-than-mem-size-optimization-work-in-gnu-ld/>
+
+**Orignal Content**
+
+This repository shows a minimal reproducible example of a strange behavior of the GNU linker (ld)
 and a weird interaction with GNU Assembler (as). A full write-up can be found on [my blog](https://phip1611.de/blog/gnu-ld-discards-section-containing-code-a-bug-hunting-story/).
 
 My goal was to create an ELF file for a kernel that looks like this:
